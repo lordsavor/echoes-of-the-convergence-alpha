@@ -1,4 +1,4 @@
-This project is missing its Library/ directory. That comes default with Unity projects and cannot be pushed to the repository b/c it contains files above 100MB
+This project is missing its Library/ directory. That comes default with Unity projects and cannot be pushed to the repository b/c it contains files above 100MB  
 This project also needs the following assets from the asset store to run:
 
 TextMeshPro  
