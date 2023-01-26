@@ -2,4 +2,4 @@ This project is missing its Library/ directory. That comes default with Unity pr
 This project also needs the following assets from the asset store to run:
 
 TextMeshPro |  can be downloaded by attempting to add a TextMeshPro UI object to your game when you don't have the package installed  
-2d Sprite Outline | link: https://assetstore.unity.com/packages/vfx/shaders/2d-sprite-outline-109669  
+2d Sprite Outline | https://assetstore.unity.com/packages/vfx/shaders/2d-sprite-outline-109669  
