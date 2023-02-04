@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{99DBF4D8-AE87-109A-BE20-15541B7001AC}</ProjectGuid>
+    <ProjectGuid>{3FE3C174-20FB-06F1-746B-750004334370}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\RoomScript.cs" />
     <Compile Include="Assets\Scripts\InventoryHandler.cs" />
     <Compile Include="Assets\Scripts\PoweredRoomScript.cs" />
+    <Compile Include="Assets\NewScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

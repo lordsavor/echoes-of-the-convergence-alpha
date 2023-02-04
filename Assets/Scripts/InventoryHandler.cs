@@ -14,17 +14,17 @@ public enum RoomType : int
 
 public struct RoomData
 {
-    private RoomType type;
+    private RoomType roomType;
     private Button button;
 
     public RoomType GetType()
     {
-        return type;
+        return roomType;
     }
 
     public void SetType(RoomType value)
     {
-        type = value;
+        roomType = value;
     }
 
     public Button getButton()
