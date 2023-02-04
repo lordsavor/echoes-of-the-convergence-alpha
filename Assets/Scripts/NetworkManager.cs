@@ -14,6 +14,8 @@ public class NetworkManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //NOTE: Opening a socket will cause the current process to hang
+        //When starting a networking task, start it in a new thread
         Task.Factory.StartNew(StartServer, TaskCreationOptions.LongRunning);
         buffer = new Queue<string>();
        
@@ -64,7 +66,7 @@ public class NetworkManager : MonoBehaviour
             while (game_active)
             {
                 bytes = new byte[1024];
-                int bytesRec = handler.Receive(bytes);
+                int bytesRec = handler.Receive(bytes); //listening for a response will also cause the current process to hang until it receives a response
                 data = Encoding.ASCII.GetString(bytes, 0, bytesRec);
                 buffer.Enqueue(data);
             }
