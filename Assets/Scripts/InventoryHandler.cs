@@ -17,7 +17,7 @@ public struct RoomData
     private RoomType roomType;
     private Button button;
 
-    public RoomType GetType()
+    public RoomType GetRoomType()
     {
         return roomType;
     }
@@ -88,9 +88,9 @@ public class InventoryHandler : MonoBehaviour
         newButtonPosition.x = 50 + (roomList.Count % 3) * 200;
         newButtonPosition.y = -50 - (125 * (roomList.Count / 3));
         
-        Button button_instance = GameObject.Instantiate(roomButton[(int)room.GetType()], newButtonPosition, Quaternion.identity);
+        Button button_instance = GameObject.Instantiate(roomButton[(int)room.GetRoomType()], newButtonPosition, Quaternion.identity);
         button_instance.transform.SetParent(gameObject.transform, false);
-        button_instance.image.sprite = roomSprites[(int)room.GetType()];
+        button_instance.image.sprite = roomSprites[(int)room.GetRoomType()];
         return button_instance;
     }
 
@@ -128,7 +128,7 @@ public class InventoryHandler : MonoBehaviour
     public void deployRoom()
     {
         RoomData data = getRoomDataByButton(selected);
-        GameObject.Instantiate(roomPrefabs[(int)data.GetType()]);
+        GameObject.Instantiate(roomPrefabs[(int)data.GetRoomType()]);
         roomList.Remove(data);
         GameObject.Destroy(selected.gameObject);
         hidePanel();

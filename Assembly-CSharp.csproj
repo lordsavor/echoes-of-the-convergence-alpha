@@ -58,12 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Draggable.cs" />
     <Compile Include="Assets\Scripts\WeaponRoomScript.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\DragDropManager.cs" />
     <Compile Include="Assets\Scripts\ButtonSelectScript.cs" />
     <Compile Include="Assets\Scripts\RoomScript.cs" />
     <Compile Include="Assets\Scripts\InventoryHandler.cs" />
+    <Compile Include="Assets\Scripts\MissileScript.cs" />
     <Compile Include="Assets\Scripts\PoweredRoomScript.cs" />
-    <Compile Include="Assets\NewScript.cs" />
+    <Compile Include="Assets\Scripts\NetworkManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -86,7 +87,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\Scripts\Test\Sprites-NoAlpha.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
