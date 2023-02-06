@@ -18,7 +18,6 @@ public class NetworkManager : MonoBehaviour
         //When starting a networking task, start it in a new thread
         Task.Factory.StartNew(StartServer, TaskCreationOptions.LongRunning);
         buffer = new Queue<string>();
-       
     }
 
     // Update is called once per frame
