@@ -11,11 +11,11 @@ public class Draggable : MonoBehaviour
     bool canMove;
     bool dragging;
     bool overlapping;
-    Collider2D collider;
+    Collider2D roomCollider;
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        collider = GetComponent<Collider2D>();
+        roomCollider = GetComponent<Collider2D>();
         canMove = false;
         dragging = false;
         overlapping = false;
@@ -29,7 +29,7 @@ public class Draggable : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (collider == Physics2D.OverlapPoint(mousePos))
+            if (roomCollider == Physics2D.OverlapPoint(mousePos))
             {
                 if (gameManager.IsSelected(this.gameObject))
                 {
